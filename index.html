@@ -8,13 +8,21 @@
       position: relative;
       display: inline-block;
       max-width: 400px;
+      width: 100%;
+      overflow: hidden;
+      aspect-ratio: 3 / 4; /* Adjust this to match your base image ratio */
     }
-    .hover-img-container img.hover {
+    .hover-img-container img {
       position: absolute;
       top: 0;
       left: 0;
-      opacity: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       transition: opacity 0.4s ease;
+    }
+    .hover-img-container img.hover {
+      opacity: 0;
     }
     .hover-img-container:hover img.hover {
       opacity: 1;
@@ -23,8 +31,8 @@
 </head>
 <body>
   <div class="hover-img-container">
-    <img src="https://images.unsplash.com/photo-1608848461950-0fe51dfc41cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80" alt="Normal">
-    <img class="hover" src="https://th.bing.com/th/id/OIP.xXIXVqbALbRi-TL77datRgHaNK?cb=iwc2&pid=ImgDet&w=474&h=842&rs=1" alt="Hover">
+    <img src="91bad42d-ed91-4b88-a863-c5fcc404f60d.jpg" alt="Normal">
+    <img class="hover" src="meat1.jpg" alt="Hover">
   </div>
 </body>
 </html>
