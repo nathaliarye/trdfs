@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hover Image Swap</title>
+  <style>
+    .hover-img-container {
+      position: relative;
+      display: inline-block;
+      max-width: 400px;
+    }
+    .hover-img-container img.hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    .hover-img-container:hover img.hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="hover-img-container">
+    <img src="https://images.unsplash.com/photo-1608848461950-0fe51dfc41cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80" alt="Normal">
+    <img class="hover" src="https://th.bing.com/th/id/OIP.xXIXVqbALbRi-TL77datRgHaNK?cb=iwc2&pid=ImgDet&w=474&h=842&rs=1" alt="Hover">
+  </div>
+</body>
+</html>
